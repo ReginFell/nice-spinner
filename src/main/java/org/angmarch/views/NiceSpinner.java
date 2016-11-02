@@ -111,7 +111,7 @@ public class NiceSpinner extends TextView {
 
         setGravity(Gravity.CENTER_VERTICAL | Gravity.LEFT);
         setPadding(resources.getDimensionPixelSize(R.dimen.three_grid_unit), defaultPadding, defaultPadding,
-            defaultPadding);
+                defaultPadding);
         setClickable(true);
 
         backgroundSelector = typedArray.getResourceId(R.styleable.NiceSpinner_backgroundSelector, R.drawable.selector);
@@ -163,8 +163,6 @@ public class NiceSpinner extends TextView {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             popupWindow.setElevation(DEFAULT_ELEVATION);
             popupWindow.setBackgroundDrawable(ContextCompat.getDrawable(context, R.drawable.spinner_drawable));
-        } else {
-            popupWindow.setBackgroundDrawable(ContextCompat.getDrawable(context, R.drawable.drop_down_shadow));
         }
 
         popupWindow.setOnDismissListener(new PopupWindow.OnDismissListener() {
@@ -199,7 +197,7 @@ public class NiceSpinner extends TextView {
 
     /**
      * Set the default spinner item using its index
-     * 
+     *
      * @param position the item's position
      */
     public void setSelectedIndex(int position) {
