@@ -24,7 +24,11 @@ public class NiceSpinnerAdapter<T> extends NiceSpinnerBaseAdapter {
 
     @Override
     public T getItem(int position) {
-        return mItems.get(position);
+        if (position >= mSelectedIndex) {
+            return mItems.get(position + 1);
+        } else {
+            return mItems.get(position);
+        }
     }
 
     @Override
