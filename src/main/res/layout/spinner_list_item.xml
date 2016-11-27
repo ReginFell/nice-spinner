@@ -9,7 +9,7 @@
           android:ellipsize="marquee"
           android:gravity="start"
           android:paddingBottom="@dimen/one_and_a_half_grid_unit"
-          android:paddingLeft="16dp"
+          android:paddingLeft="8dp"
           android:paddingTop="@dimen/one_and_a_half_grid_unit"
           android:singleLine="true"
           android:textSize="15sp"
